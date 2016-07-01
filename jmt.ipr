@@ -1,0 +1,1220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="jar" build-on-make="true" name="ru.pflb.jmeter.samplers.TailSampler">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ru.pflb.jmeter.samplers.TailSampler.jar">
+        <element id="module-output" name="ru.pflb.jmeter.samplers.TailSampler" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_components">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_components.jar">
+        <element id="module-output" name="components" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_core">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_core.jar">
+        <element id="module-output" name="core" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_ftp">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_ftp.jar">
+        <element id="module-output" name="protocol.ftp" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_functions">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_functions.jar">
+        <element id="module-output" name="functions" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_http">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_http.jar">
+        <element id="module-output" name="protocol.http" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_java">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_java.jar">
+        <element id="module-output" name="protocol.java" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_jdbc">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_jdbc.jar">
+        <element id="module-output" name="protocol.jdbc" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_jms">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_jms.jar">
+        <element id="module-output" name="protocol.jms" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_junit">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_junit.jar">
+        <element id="module-output" name="junit" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_ldap">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_ldap.jar">
+        <element id="module-output" name="protocol.ldap" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_mail">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_mail.jar">
+        <element id="module-output" name="protocol.mail" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_mongodb">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_mongodb.jar">
+        <element id="module-output" name="protocol.mongodb" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_monitors">
+      <output-path>$PROJECT_DIR$/out/artifacts/ApacheJMeter_monitors</output-path>
+      <root id="archive" name="ApacheJMeter_monitors.jar">
+        <element id="module-output" name="monitor.components" />
+        <element id="module-output" name="monitor.model" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_native">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_native.jar">
+        <element id="module-output" name="protocol.native" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_tcp">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_tcp.jar">
+        <element id="module-output" name="protocol.tcp" />
+      </root>
+    </artifact>
+    <artifact type="jar" build-on-make="true" name="ApacheJMeter_examples">
+      <output-path>$PROJECT_DIR$/jmeter/lib/ext</output-path>
+      <root id="archive" name="ApacheJMeter_examples.jar">
+        <element id="module-output" name="examples" />
+      </root>
+    </artifact>
+  </component>
+  <component name="CompilerConfiguration">
+    <resourceExtensions />
+    <wildcardResourcePatterns>
+      <entry name="!?*.java" />
+      <entry name="!?*.form" />
+      <entry name="!?*.class" />
+      <entry name="!?*.groovy" />
+      <entry name="!?*.scala" />
+      <entry name="!?*.flex" />
+      <entry name="!?*.kt" />
+      <entry name="!?*.clj" />
+      <entry name="!?*.aj" />
+    </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="false">
+        <processorPath useClasspath="true" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="CopyrightManager" default="" />
+  <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0" />
+  </component>
+  <component name="Palette2">
+    <group name="Swing">
+      <item class="com.intellij.uiDesigner.HSpacer" tooltip-text="Horizontal Spacer" icon="/com/intellij/uiDesigner/icons/hspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="1" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="com.intellij.uiDesigner.VSpacer" tooltip-text="Vertical Spacer" icon="/com/intellij/uiDesigner/icons/vspacer.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="1" anchor="0" fill="2" />
+      </item>
+      <item class="javax.swing.JPanel" icon="/com/intellij/uiDesigner/icons/panel.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JScrollPane" icon="/com/intellij/uiDesigner/icons/scrollPane.png" removable="false" auto-create-binding="false" can-attach-label="true">
+        <default-constraints vsize-policy="7" hsize-policy="7" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JButton" icon="/com/intellij/uiDesigner/icons/button.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="0" fill="1" />
+        <initial-values>
+          <property name="text" value="Button" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JRadioButton" icon="/com/intellij/uiDesigner/icons/radioButton.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="RadioButton" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JCheckBox" icon="/com/intellij/uiDesigner/icons/checkBox.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="3" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="CheckBox" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JLabel" icon="/com/intellij/uiDesigner/icons/label.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="8" fill="0" />
+        <initial-values>
+          <property name="text" value="Label" />
+        </initial-values>
+      </item>
+      <item class="javax.swing.JTextField" icon="/com/intellij/uiDesigner/icons/textField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JPasswordField" icon="/com/intellij/uiDesigner/icons/passwordField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JFormattedTextField" icon="/com/intellij/uiDesigner/icons/formattedTextField.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1">
+          <preferred-size width="150" height="-1" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextArea" icon="/com/intellij/uiDesigner/icons/textArea.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTextPane" icon="/com/intellij/uiDesigner/icons/textPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JEditorPane" icon="/com/intellij/uiDesigner/icons/editorPane.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JComboBox" icon="/com/intellij/uiDesigner/icons/comboBox.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="2" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JTable" icon="/com/intellij/uiDesigner/icons/table.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JList" icon="/com/intellij/uiDesigner/icons/list.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="2" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTree" icon="/com/intellij/uiDesigner/icons/tree.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3">
+          <preferred-size width="150" height="50" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JTabbedPane" icon="/com/intellij/uiDesigner/icons/tabbedPane.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSplitPane" icon="/com/intellij/uiDesigner/icons/splitPane.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="3" hsize-policy="3" anchor="0" fill="3">
+          <preferred-size width="200" height="200" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JSpinner" icon="/com/intellij/uiDesigner/icons/spinner.png" removable="false" auto-create-binding="true" can-attach-label="true">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSlider" icon="/com/intellij/uiDesigner/icons/slider.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="8" fill="1" />
+      </item>
+      <item class="javax.swing.JSeparator" icon="/com/intellij/uiDesigner/icons/separator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="6" anchor="0" fill="3" />
+      </item>
+      <item class="javax.swing.JProgressBar" icon="/com/intellij/uiDesigner/icons/progressbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JToolBar" icon="/com/intellij/uiDesigner/icons/toolbar.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="6" anchor="0" fill="1">
+          <preferred-size width="-1" height="20" />
+        </default-constraints>
+      </item>
+      <item class="javax.swing.JToolBar$Separator" icon="/com/intellij/uiDesigner/icons/toolbarSeparator.png" removable="false" auto-create-binding="false" can-attach-label="false">
+        <default-constraints vsize-policy="0" hsize-policy="0" anchor="0" fill="1" />
+      </item>
+      <item class="javax.swing.JScrollBar" icon="/com/intellij/uiDesigner/icons/scrollbar.png" removable="false" auto-create-binding="true" can-attach-label="false">
+        <default-constraints vsize-policy="6" hsize-policy="0" anchor="0" fill="2" />
+      </item>
+    </group>
+  </component>
+  <component name="ProjectDictionaryState">
+    <dictionary name="Smirnov_VA">
+      <words>
+        <w>ctor</w>
+        <w>iframe</w>
+        <w>keepalive</w>
+        <w>pflb</w>
+      </words>
+    </dictionary>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/components/components.iml" filepath="$PROJECT_DIR$/jmeter/src/components/components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/core/core.iml" filepath="$PROJECT_DIR$/jmeter/src/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/examples/examples.iml" filepath="$PROJECT_DIR$/jmeter/src/examples/examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/functions/functions.iml" filepath="$PROJECT_DIR$/jmeter/src/functions/functions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmt.iml" filepath="$PROJECT_DIR$/jmt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/jorphan/jorphan.iml" filepath="$PROJECT_DIR$/jmeter/src/jorphan/jorphan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/junit/junit.iml" filepath="$PROJECT_DIR$/jmeter/src/junit/junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/monitor/components/monitor.components.iml" filepath="$PROJECT_DIR$/jmeter/src/monitor/components/monitor.components.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/monitor/model/monitor.model.iml" filepath="$PROJECT_DIR$/jmeter/src/monitor/model/monitor.model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/ftp/protocol.ftp.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/ftp/protocol.ftp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/http/protocol.http.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/http/protocol.http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/java/protocol.java.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/java/protocol.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/jdbc/protocol.jdbc.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/jdbc/protocol.jdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/jms/protocol.jms.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/jms/protocol.jms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/ldap/protocol.ldap.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/ldap/protocol.ldap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/mail/protocol.mail.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/mail/protocol.mail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/mongodb/protocol.mongodb.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/mongodb/protocol.mongodb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/native/protocol.native.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/native/protocol.native.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jmeter/src/protocol/tcp/protocol.tcp.iml" filepath="$PROJECT_DIR$/jmeter/src/protocol/tcp/protocol.tcp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ru.pflb.jmeter.samplers.TailSampler/ru.pflb.jmeter.samplers.TailSampler.iml" filepath="$PROJECT_DIR$/ru.pflb.jmeter.samplers.TailSampler/ru.pflb.jmeter.samplers.TailSampler.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectRunConfigurationManager">
+    <configuration default="false" name="JMeter" type="Application" factoryName="Application" singleton="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="org.apache.jmeter.NewDriver" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-t 1.jmx -Jsample_variables=test,path" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$/jmeter/bin" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_73" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="jmt" />
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="libraryTable">
+    <library name="ApacheJMeter_ftp">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_ftp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_functions">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_functions.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_http">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_http.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_java">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_java.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_jdbc">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_jdbc.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_jms">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_jms.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_ldap">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_ldap.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_mail">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_mail.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_mongodb">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_mongodb.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_monitors">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_monitors.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_native">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_native.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="ApacheJMeter_tcp">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/ext/ApacheJMeter_tcp.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="bsf-2.4.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/bsf-2.4.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="com.fifesoft:rsyntaxtextarea:2.5.8" type="repository">
+      <properties maven-id="com.fifesoft:rsyntaxtextarea:2.5.8" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="commons-collections-3.2.2">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/commons-collections-3.2.2.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-io-2.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/commons-io-2.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-jexl-1.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/commons-jexl-1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-jexl-2.1.1">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/commons-jexl-2.1.1.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="commons-lang3-3.4">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/commons-lang3-3.4.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="logkit-2.0">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/jmeter/lib/logkit-2.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org.apache.httpcomponents:httpclient:4.5.2" type="repository">
+      <properties maven-id="org.apache.httpcomponents:httpclient:4.5.2" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.9/commons-codec-1.9.jar!/" />
+      </CLASSES>
+      <JAVADOC>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-javadoc.jar!/" />
+      </JAVADOC>
+      <SOURCES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2-sources.jar!/" />
+      </SOURCES>
+    </library>
+    <library name="org.apache.jmeter:ApacheJMeter:3.0" type="repository">
+      <properties maven-id="org.apache.jmeter:ApacheJMeter:3.0" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/ApacheJMeter/3.0/ApacheJMeter-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.1/asm-5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/bsf/bsf/2.4.0/bsf-2.4.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.1.4/avalon-framework-4.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b5/bsh-2.0b5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.49/bcmail-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.49/bcprov-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.49/bcpkix-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-jexl/commons-jexl/1.1/commons-jexl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl3/3.0/commons-jexl3-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.4/commons-net-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/excalibur-logger/excalibur-logger/1.1/excalibur-logger-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/jcharts/jcharts/0.7.5/jcharts-0.7.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/logkit/logkit/2.0/logkit-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jtidy/jtidy/r938/jtidy-r938.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-core/1.12/tika-core-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers/1.12/tika-parsers-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-tika/0.6/vorbis-java-tika-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/2.1.2/jackcess-2.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess-encrypt/2.1.1/jackcess-encrypt-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/jmatio/jmatio/1.0/jmatio-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-dom/0.7.2/apache-mime4j-dom-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/1.8.10/jempbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-scratchpad/3.13/poi-scratchpad-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.13/poi-ooxml-schemas-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/mp4parser/isoparser/1.0.2/isoparser-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.0/aspectjrt-1.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/drewnoakes/metadata-extractor/2.8.0/metadata-extractor-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/xmp/xmpcore/5.1.2/xmpcore-5.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/de/l3s/boilerpipe/boilerpipe/1.1.0/boilerpipe-1.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome/1.5.1/rome-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-core/0.6/vorbis-java-core-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codelibs/jhighlight/1.0.2/jhighlight-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/pff/java-libpst/0.8.1/java-libpst-0.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/junrar/junrar/0.7/junrar-0.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.0/commons-vfs2-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-api/1.4/maven-scm-api-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-client/3.0.3/cxf-rt-rs-client-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http/3.0.3/cxf-rt-transports-http-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.0.3/cxf-core-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/xmlschema/xmlschema-core/2.1.0/xmlschema-core-2.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/3.0.3/cxf-rt-frontend-jaxrs-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/cdm/4.5.5/cdm-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/udunits/4.5.5/udunits-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.2/joda-time-2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/httpservices/4.5.5/httpservices-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.4/jdom2-2.0.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.0/quartz-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.2/ehcache-core-2.6.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/itadaki/bzip2/0.9.1/bzip2-0.9.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.35/jcommander-1.35.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/grib/4.5.5/grib-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/jj2000/5.2/jj2000-5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-utility/0.5/sis-utility-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/measure/jsr-275/0.9.3/jsr-275-0.9.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-netcdf/0.5/sis-netcdf-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-storage/0.5/sis-storage-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-metadata/0.5/sis-metadata-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-referencing/0.5/sis-referencing-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.2/serializer-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.0.1/xmlgraphics-commons-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-core/3.6.7/jodd-core-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-lagarto/3.6.7/jodd-lagarto-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-log/3.6.7/jodd-log-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-props/3.6.7/jodd-props-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-css/4.1.1/ph-css-4.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-commons/6.2.4/ph-commons-6.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/ApacheJMeter/3.0/ApacheJMeter-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.1/asm-5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/bsf/bsf/2.4.0/bsf-2.4.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.1.4/avalon-framework-4.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b5/bsh-2.0b5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.49/bcmail-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.49/bcprov-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.49/bcpkix-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-jexl/commons-jexl/1.1/commons-jexl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl3/3.0/commons-jexl3-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.4/commons-net-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/excalibur-logger/excalibur-logger/1.1/excalibur-logger-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/jcharts/jcharts/0.7.5/jcharts-0.7.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/logkit/logkit/2.0/logkit-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jtidy/jtidy/r938/jtidy-r938.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-core/1.12/tika-core-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers/1.12/tika-parsers-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-tika/0.6/vorbis-java-tika-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/2.1.2/jackcess-2.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess-encrypt/2.1.1/jackcess-encrypt-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/jmatio/jmatio/1.0/jmatio-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-dom/0.7.2/apache-mime4j-dom-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/1.8.10/jempbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-scratchpad/3.13/poi-scratchpad-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.13/poi-ooxml-schemas-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/mp4parser/isoparser/1.0.2/isoparser-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.0/aspectjrt-1.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/drewnoakes/metadata-extractor/2.8.0/metadata-extractor-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/xmp/xmpcore/5.1.2/xmpcore-5.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/de/l3s/boilerpipe/boilerpipe/1.1.0/boilerpipe-1.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome/1.5.1/rome-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-core/0.6/vorbis-java-core-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codelibs/jhighlight/1.0.2/jhighlight-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/pff/java-libpst/0.8.1/java-libpst-0.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/junrar/junrar/0.7/junrar-0.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.0/commons-vfs2-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-api/1.4/maven-scm-api-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-client/3.0.3/cxf-rt-rs-client-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http/3.0.3/cxf-rt-transports-http-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.0.3/cxf-core-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/xmlschema/xmlschema-core/2.1.0/xmlschema-core-2.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/3.0.3/cxf-rt-frontend-jaxrs-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/cdm/4.5.5/cdm-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/udunits/4.5.5/udunits-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.2/joda-time-2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/httpservices/4.5.5/httpservices-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.4/jdom2-2.0.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.0/quartz-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.2/ehcache-core-2.6.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/itadaki/bzip2/0.9.1/bzip2-0.9.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.35/jcommander-1.35.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/grib/4.5.5/grib-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/jj2000/5.2/jj2000-5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-utility/0.5/sis-utility-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/measure/jsr-275/0.9.3/jsr-275-0.9.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-netcdf/0.5/sis-netcdf-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-storage/0.5/sis-storage-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-metadata/0.5/sis-metadata-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-referencing/0.5/sis-referencing-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.2/serializer-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.0.1/xmlgraphics-commons-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-core/3.6.7/jodd-core-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-lagarto/3.6.7/jodd-lagarto-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-log/3.6.7/jodd-log-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-props/3.6.7/jodd-props-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-css/4.1.1/ph-css-4.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-commons/6.2.4/ph-commons-6.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org.apache.jmeter:ApacheJMeter_components:3.0" type="repository">
+      <properties maven-id="org.apache.jmeter:ApacheJMeter_components:3.0" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/ApacheJMeter_components/3.0/ApacheJMeter_components-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/jorphan/3.0/jorphan-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.1/asm-5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/bsf/bsf/2.4.0/bsf-2.4.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.1.4/avalon-framework-4.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b5/bsh-2.0b5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.49/bcmail-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.49/bcprov-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.49/bcpkix-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-jexl/commons-jexl/1.1/commons-jexl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl3/3.0/commons-jexl3-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.4/commons-net-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/excalibur-logger/excalibur-logger/1.1/excalibur-logger-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/jcharts/jcharts/0.7.5/jcharts-0.7.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/logkit/logkit/2.0/logkit-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jtidy/jtidy/r938/jtidy-r938.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-core/1.12/tika-core-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers/1.12/tika-parsers-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-tika/0.6/vorbis-java-tika-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/2.1.2/jackcess-2.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess-encrypt/2.1.1/jackcess-encrypt-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/jmatio/jmatio/1.0/jmatio-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-dom/0.7.2/apache-mime4j-dom-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/1.8.10/jempbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-scratchpad/3.13/poi-scratchpad-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.13/poi-ooxml-schemas-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/mp4parser/isoparser/1.0.2/isoparser-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.0/aspectjrt-1.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/drewnoakes/metadata-extractor/2.8.0/metadata-extractor-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/xmp/xmpcore/5.1.2/xmpcore-5.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/de/l3s/boilerpipe/boilerpipe/1.1.0/boilerpipe-1.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome/1.5.1/rome-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-core/0.6/vorbis-java-core-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codelibs/jhighlight/1.0.2/jhighlight-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/pff/java-libpst/0.8.1/java-libpst-0.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/junrar/junrar/0.7/junrar-0.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.0/commons-vfs2-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-api/1.4/maven-scm-api-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-client/3.0.3/cxf-rt-rs-client-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http/3.0.3/cxf-rt-transports-http-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.0.3/cxf-core-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/xmlschema/xmlschema-core/2.1.0/xmlschema-core-2.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/3.0.3/cxf-rt-frontend-jaxrs-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/cdm/4.5.5/cdm-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/udunits/4.5.5/udunits-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.2/joda-time-2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/httpservices/4.5.5/httpservices-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.4/jdom2-2.0.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.0/quartz-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.2/ehcache-core-2.6.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/itadaki/bzip2/0.9.1/bzip2-0.9.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.35/jcommander-1.35.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/grib/4.5.5/grib-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/jj2000/5.2/jj2000-5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-utility/0.5/sis-utility-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/measure/jsr-275/0.9.3/jsr-275-0.9.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-netcdf/0.5/sis-netcdf-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-storage/0.5/sis-storage-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-metadata/0.5/sis-metadata-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-referencing/0.5/sis-referencing-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.2/serializer-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.0.1/xmlgraphics-commons-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-core/3.6.7/jodd-core-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-lagarto/3.6.7/jodd-lagarto-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-log/3.6.7/jodd-log-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-props/3.6.7/jodd-props-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-css/4.1.1/ph-css-4.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-commons/6.2.4/ph-commons-6.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/ApacheJMeter_core/3.0/ApacheJMeter_core-3.0.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org.apache.jmeter:ApacheJMeter_core:3.0" type="repository">
+      <properties maven-id="org.apache.jmeter:ApacheJMeter_core:3.0" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/ApacheJMeter_core/3.0/ApacheJMeter_core-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/jorphan/3.0/jorphan-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.1/asm-5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/bsf/bsf/2.4.0/bsf-2.4.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.1.4/avalon-framework-4.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b5/bsh-2.0b5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.49/bcmail-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.49/bcprov-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.49/bcpkix-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-jexl/commons-jexl/1.1/commons-jexl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl3/3.0/commons-jexl3-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.4/commons-net-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/excalibur-logger/excalibur-logger/1.1/excalibur-logger-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/jcharts/jcharts/0.7.5/jcharts-0.7.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/logkit/logkit/2.0/logkit-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jtidy/jtidy/r938/jtidy-r938.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-core/1.12/tika-core-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers/1.12/tika-parsers-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-tika/0.6/vorbis-java-tika-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/2.1.2/jackcess-2.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess-encrypt/2.1.1/jackcess-encrypt-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/jmatio/jmatio/1.0/jmatio-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-dom/0.7.2/apache-mime4j-dom-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/1.8.10/jempbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-scratchpad/3.13/poi-scratchpad-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.13/poi-ooxml-schemas-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/mp4parser/isoparser/1.0.2/isoparser-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.0/aspectjrt-1.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/drewnoakes/metadata-extractor/2.8.0/metadata-extractor-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/xmp/xmpcore/5.1.2/xmpcore-5.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/de/l3s/boilerpipe/boilerpipe/1.1.0/boilerpipe-1.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome/1.5.1/rome-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-core/0.6/vorbis-java-core-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codelibs/jhighlight/1.0.2/jhighlight-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/pff/java-libpst/0.8.1/java-libpst-0.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/junrar/junrar/0.7/junrar-0.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.0/commons-vfs2-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-api/1.4/maven-scm-api-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-client/3.0.3/cxf-rt-rs-client-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http/3.0.3/cxf-rt-transports-http-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.0.3/cxf-core-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/xmlschema/xmlschema-core/2.1.0/xmlschema-core-2.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/3.0.3/cxf-rt-frontend-jaxrs-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/cdm/4.5.5/cdm-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/udunits/4.5.5/udunits-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.2/joda-time-2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/httpservices/4.5.5/httpservices-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.4/jdom2-2.0.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.0/quartz-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.2/ehcache-core-2.6.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/itadaki/bzip2/0.9.1/bzip2-0.9.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.35/jcommander-1.35.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/grib/4.5.5/grib-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/jj2000/5.2/jj2000-5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-utility/0.5/sis-utility-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/measure/jsr-275/0.9.3/jsr-275-0.9.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-netcdf/0.5/sis-netcdf-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-storage/0.5/sis-storage-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-metadata/0.5/sis-metadata-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-referencing/0.5/sis-referencing-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.2/serializer-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.0.1/xmlgraphics-commons-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-core/3.6.7/jodd-core-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-lagarto/3.6.7/jodd-lagarto-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-log/3.6.7/jodd-log-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-props/3.6.7/jodd-props-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-css/4.1.1/ph-css-4.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-commons/6.2.4/ph-commons-6.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="org.apache.jmeter:jorphan:3.0" type="repository">
+      <properties maven-id="org.apache.jmeter:jorphan:3.0" />
+      <CLASSES>
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/jmeter/jorphan/3.0/jorphan-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ow2/asm/asm/5.1/asm-5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/accessors-smart/1.1/accessors-smart-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/bsf/bsf/2.4.0/bsf-2.4.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging/1.2/commons-logging-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/avalon-framework/avalon-framework/4.1.4/avalon-framework-4.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/beanshell/bsh/2.0b5/bsh-2.0b5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcmail-jdk15on/1.49/bcmail-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcprov-jdk15on/1.49/bcprov-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/bouncycastle/bcpkix-jdk15on/1.49/bcpkix-jdk15on-1.49.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-codec/commons-codec/1.10/commons-codec-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-dbcp2/2.1.1/commons-dbcp2-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-pool2/2.4.2/commons-pool2-2.4.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-io/commons-io/2.4/commons-io-2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-jexl/commons-jexl/1.1/commons-jexl-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl/2.1.1/commons-jexl-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-jexl3/3.0/commons-jexl3-3.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-net/commons-net/3.4/commons-net-3.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/excalibur-logger/excalibur-logger/1.1/excalibur-logger-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/groovy/groovy-all/2.4.6/groovy-all-2.4.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpcore/4.4.4/httpcore-4.4.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/oro/oro/2.0.8/oro-2.0.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/jcharts/jcharts/0.7.5/jcharts-0.7.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mozilla/rhino/1.7.7.1/rhino-1.7.7.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/logkit/logkit/2.0/logkit-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jtidy/jtidy/r938/jtidy-r938.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-core/1.12/tika-core-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/tika/tika-parsers/1.12/tika-parsers-1.12.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-tika/0.6/vorbis-java-tika-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess/2.1.2/jackcess-2.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/healthmarketscience/jackcess/jackcess-encrypt/2.1.1/jackcess-encrypt-2.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sourceforge/jmatio/jmatio/1.0/jmatio-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-core/0.7.2/apache-mime4j-core-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/james/apache-mime4j-dom/0.7.2/apache-mime4j-dom-0.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.10/commons-compress-1.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.5/xz-1.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/pdfbox/1.8.10/pdfbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/fontbox/1.8.10/fontbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/pdfbox/jempbox/1.8.10/jempbox-1.8.10.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi/3.13/poi-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-scratchpad/3.13/poi-scratchpad-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml/3.13/poi-ooxml-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/poi/poi-ooxml-schemas/3.13/poi-ooxml-schemas-3.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlbeans/xmlbeans/2.6.0/xmlbeans-2.6.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/mp4parser/isoparser/1.0.2/isoparser-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/aspectj/aspectjrt/1.8.0/aspectjrt-1.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/drewnoakes/metadata-extractor/2.8.0/metadata-extractor-2.8.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/adobe/xmp/xmpcore/5.1.2/xmpcore-5.1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/de/l3s/boilerpipe/boilerpipe/1.1.0/boilerpipe-1.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome/1.5.1/rome-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/rometools/rome-utils/1.5.1/rome-utils-1.5.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom/2.0.2/jdom-2.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/gagravarr/vorbis-java-core/0.6/vorbis-java-core-0.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/juniversalchardet/juniversalchardet/1.0.3/juniversalchardet-1.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codelibs/jhighlight/1.0.2/jhighlight-1.0.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/pff/java-libpst/0.8.1/java-libpst-0.8.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/github/junrar/junrar/0.7/junrar-0.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/commons-logging/commons-logging-api/1.1/commons-logging-api-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-vfs2/2.0/commons-vfs2-2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-api/1.4/maven-scm-api-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/plexus/plexus-utils/1.5.6/plexus-utils-1.5.6.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svnexe/1.4/maven-scm-provider-svnexe-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/maven/scm/maven-scm-provider-svn-commons/1.4/maven-scm-provider-svn-commons-1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/regexp/regexp/1.3/regexp-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-rs-client/3.0.3/cxf-rt-rs-client-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-transports-http/3.0.3/cxf-rt-transports-http-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-core/3.0.3/cxf-core-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/woodstox-core-asl/4.4.1/woodstox-core-asl-4.4.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/woodstox/stax2-api/3.1.4/stax2-api-3.1.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/ws/xmlschema/xmlschema-core/2.1.0/xmlschema-core-2.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/cxf/cxf-rt-frontend-jaxrs/3.0.3/cxf-rt-frontend-jaxrs-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/ws/rs/javax.ws.rs-api/2.0.1/javax.ws.rs-api-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-tools/1.5.3/opennlp-tools-1.5.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/opennlp/opennlp-maxent/3.0.3/opennlp-maxent-3.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/jwordnet/jwnl/1.3.3/jwnl-1.3.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/json/json/20140107/json-20140107.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/gson/gson/2.2.4/gson-2.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/netcdf4/4.5.5/netcdf4-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/cdm/4.5.5/cdm-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/udunits/4.5.5/udunits-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/joda-time/joda-time/2.2/joda-time-2.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/httpservices/4.5.5/httpservices-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jdom/jdom2/2.0.4/jdom2-2.0.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/quartz-scheduler/quartz/2.2.0/quartz-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.1/c3p0-0.9.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/protobuf/protobuf-java/2.5.0/protobuf-java-2.5.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/sf/ehcache/ehcache-core/2.6.2/ehcache-core-2.6.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/17.0/guava-17.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/itadaki/bzip2/0.9.1/bzip2-0.9.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/beust/jcommander/1.35/jcommander-1.35.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/grib/4.5.5/grib-4.5.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jsoup/jsoup/1.8.3/jsoup-1.8.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/edu/ucar/jj2000/5.2/jj2000-5.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-utility/0.5/sis-utility-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/opengis/geoapi/3.0.0/geoapi-3.0.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/measure/jsr-275/0.9.3/jsr-275-0.9.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-netcdf/0.5/sis-netcdf-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/storage/sis-storage/0.5/sis-storage-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-metadata/0.5/sis-metadata-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/sis/core/sis-referencing/0.5/sis-referencing-0.5.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/xstream/xstream/1.4.8/xstream-1.4.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/xalan/2.7.2/xalan-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xalan/serializer/2.7.2/serializer-2.7.2.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/xmlgraphics/xmlgraphics-commons/2.0.1/xmlgraphics-commons-2.0.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/mail/mail/1.5.0-b01/mail-1.5.0-b01.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/javax/activation/activation/1.1/activation-1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1.1/geronimo-jms_1.1_spec-1.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/jayway/jsonpath/json-path/2.2.0/json-path-2.2.0.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/net/minidev/json-smart/2.2.1/json-smart-2.2.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-core/3.6.7/jodd-core-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-lagarto/3.6.7/jodd-lagarto-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-log/3.6.7/jodd-log-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/jodd/jodd-props/3.6.7/jodd-props-3.6.7.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/mongodb/mongo-java-driver/2.11.3/mongo-java-driver-2.11.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-css/4.1.1/ph-css-4.1.1.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/helger/ph-commons/6.2.4/ph-commons-6.2.4.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.3/annotations-2.0.3.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/com/fifesoft/rsyntaxtextarea/2.5.8/rsyntaxtextarea-2.5.8.jar!/" />
+        <root url="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+  </component>
+</project>
