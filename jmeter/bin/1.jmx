@@ -1,0 +1,1231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="2.9" jmeter="3.0 r1743807">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Test Plan" enabled="true">
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <DNSCacheManager guiclass="DNSCachePanel" testclass="DNSCacheManager" testname="DNS Cache Manager" enabled="true">
+        <collectionProp name="DNSCacheManager.servers"/>
+        <boolProp name="DNSCacheManager.clearEachIteration">true</boolProp>
+        <boolProp name="DNSCacheManager.isCustomResolver">false</boolProp>
+      </DNSCacheManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="false">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">pflb.ru</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.proxyHost">localhost</stringProp>
+        <stringProp name="HTTPSampler.proxyPort">8888</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+        <stringProp name="HTTPSampler.protocol"></stringProp>
+        <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+        <stringProp name="HTTPSampler.path">/</stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">4</stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="test" elementType="Argument">
+            <stringProp name="Argument.name">test</stringProp>
+            <stringProp name="Argument.value">test123</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="vartest12345" elementType="Argument">
+            <stringProp name="Argument.name">vartest12345</stringProp>
+            <stringProp name="Argument.value">iueyfsdhgfgsdhgfdsjhgfhewgyfgdg</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="path" elementType="Argument">
+            <stringProp name="Argument.name">path</stringProp>
+            <stringProp name="Argument.value">www.perevozchikovaav.ru</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <longProp name="ThreadGroup.start_time">1456496391000</longProp>
+        <longProp name="ThreadGroup.end_time">1456496391000</longProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">google.com</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <intProp name="HTTPSampler.ipSourceType">2</intProp>
+        </HTTPSamplerProxy>
+        <hashTree>
+          <RandomVariableConfig guiclass="TestBeanGUI" testclass="RandomVariableConfig" testname="Random Variable" enabled="true">
+            <stringProp name="maximumValue">10</stringProp>
+            <stringProp name="minimumValue">1</stringProp>
+            <stringProp name="outputFormat"></stringProp>
+            <boolProp name="perThread">false</boolProp>
+            <stringProp name="randomSeed"></stringProp>
+            <stringProp name="variableName">par</stringProp>
+          </RandomVariableConfig>
+          <hashTree/>
+          <UserParameters guiclass="UserParametersGui" testclass="UserParameters" testname="User Parameters" enabled="true">
+            <collectionProp name="UserParameters.names">
+              <stringProp name="-1422439729">testpar</stringProp>
+            </collectionProp>
+            <collectionProp name="UserParameters.thread_values">
+              <collectionProp name="-501987606">
+                <stringProp name="608222550">qwertrty</stringProp>
+              </collectionProp>
+            </collectionProp>
+            <boolProp name="UserParameters.per_iteration">false</boolProp>
+          </UserParameters>
+          <hashTree/>
+          <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments">
+              <elementProp name="test1" elementType="Argument">
+                <stringProp name="Argument.name">test1</stringProp>
+                <stringProp name="Argument.value">test123rfrf</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+              <elementProp name="vartest1234567890" elementType="Argument">
+                <stringProp name="Argument.name">vartest1234567890</stringProp>
+                <stringProp name="Argument.value">rfrrfrfrfrfrfrfrf</stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+            </collectionProp>
+          </Arguments>
+          <hashTree/>
+        </hashTree>
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="HTTP Request Error" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">${path}</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path"></stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+        </HTTPSamplerProxy>
+        <hashTree/>
+        <TCPSampler guiclass="TCPSamplerGui" testclass="TCPSampler" testname="TCP Sampler" enabled="false">
+          <stringProp name="TCPSampler.server"></stringProp>
+          <boolProp name="TCPSampler.reUseConnection">true</boolProp>
+          <stringProp name="TCPSampler.port"></stringProp>
+          <boolProp name="TCPSampler.nodelay">false</boolProp>
+          <stringProp name="TCPSampler.timeout"></stringProp>
+          <stringProp name="TCPSampler.request">d
+d
+d
+d
+d
+d
+d
+
+d
+d
+d
+d
+d
+d
+d
+
+d
+d
+d
+d
+d
+d
+d
+
+</stringProp>
+          <boolProp name="TCPSampler.closeConnection">false</boolProp>
+          <stringProp name="ConfigTestElement.username"></stringProp>
+          <stringProp name="ConfigTestElement.password"></stringProp>
+        </TCPSampler>
+        <hashTree/>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - without thread pool" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">Java</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">3</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/привет/123/ыыыыы.html?q=1&amp;e=2&amp;suppress_res=5
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/&amp;#1087;&amp;#1088;&amp;#1080;&amp;#1074;&amp;#1077;&amp;#1090;/123/&amp;#1099;&amp;#1099;&amp;#1099;&amp;#1099;&amp;#1099;.html?q=1&amp;amp;e=2&amp;amp;suppress_res=5&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (without thread pool)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 1 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <stringProp name="HTTPSampler.concurrentPool">1</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (1)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 2 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">2</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (2)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 3 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">3</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (3)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 4 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (4)" enabled="false">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 5 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">5</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (5)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 6 thread" enabled="false">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (6)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <ru.pflb.jmeter.samplers.TailHTTPSamplerProxy guiclass="ru.pflb.jmeter.samplers.TailHttpSamplerGui" testclass="ru.pflb.jmeter.samplers.TailHTTPSamplerProxy" testname="Tail - 7 thread" enabled="true">
+          <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+            <collectionProp name="Arguments.arguments"/>
+          </elementProp>
+          <stringProp name="HTTPSampler.domain">www.performance-lab.ru</stringProp>
+          <stringProp name="HTTPSampler.port"></stringProp>
+          <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+          <stringProp name="HTTPSampler.response_timeout"></stringProp>
+          <stringProp name="HTTPSampler.protocol"></stringProp>
+          <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+          <stringProp name="HTTPSampler.path">/embedded.resource.html</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+          <boolProp name="HTTPSampler.DO_MULTIPART_POST">true</boolProp>
+          <boolProp name="HTTPSampler.BROWSER_COMPATIBLE_MULTIPART">true</boolProp>
+          <stringProp name="HTTPSampler.implementation">HttpClient4</stringProp>
+          <boolProp name="HTTPSampler.image_parser">true</boolProp>
+          <boolProp name="HTTPSampler.concurrentDwn">true</boolProp>
+          <stringProp name="HTTPSampler.concurrentPool">7</stringProp>
+          <boolProp name="HTTPSampler.monitor">false</boolProp>
+          <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+          <stringProp name="Tail.Links">http://www.google-analytics.com/analytics.js
+/sites/all/themes/pro/static/img/icons.png
+/sites/all/themes/pro/static/img/icon-quality.png
+/sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/main_3_block90-s.png
+sites/all/themes/pro/static/img/iso-icon_new.jpg
+sites/all/themes/pro/static/img/logo-gray-small.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png
+http://www.google-analytics.com/r/collect?v=1&amp;_v=j41&amp;a=1618420078&amp;t=pageview&amp;_s=1&amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;ul=ru-ru&amp;de=UTF-8&amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;sd=24-bit&amp;sr=2000x1125&amp;vp=1851x1036&amp;je=0&amp;_u=AACAAEABI~&amp;jid=577970443&amp;cid=1018227072.1435921485&amp;tid=UA-38726905-1&amp;_r=1&amp;z=1229189645
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://player.vimeo.com/video/81598867?title=0&amp;byline=0&amp;portrait=0
+https://connect.facebook.net/en_US/all.js#xfbml=1
+https://mc.yandex.ru/metrika/watch.js
+https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;_=1456558218317
+https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;lang=en&amp;callback=twitterFetcher.callback&amp;suppress_response_codes=true&amp;rnd=0.508168626184325
+https://mc.yandex.ru/metrika/advert.gif
+https://mc.yandex.ru/watch/20434597?wmode=5&amp;callback=_ymjsp531663347&amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA
+https://f.vimeocdn.com/p/2.16.1/js/player.js
+https://f.vimeocdn.com/p/2.16.1/css/player.css
+https://ssl.google-analytics.com/ga.js
+https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js
+https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;payload=%7B%22source%22%3A%22jssdk%22%7D
+http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;origin=http%3A%2F%2Fwww.performance-lab.ru
+</stringProp>
+          <stringProp name="Tail.Content">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;Embedded resources&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/analytics.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icons.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/icon-quality.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;/sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/main_3_block90-s.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/iso-icon_new.jpg&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;sites/all/themes/pro/static/img/logo-gray-small.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/footer-shadow.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/google-icon.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/gostest-logo.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.performance-lab.ru/sites/all/themes/pro/static/img/nav-submenu.png&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://www.google-analytics.com/r/collect?v=1&amp;amp;_v=j41&amp;amp;a=1618420078&amp;amp;t=pageview&amp;amp;_s=1&amp;amp;dl=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;ul=ru-ru&amp;amp;de=UTF-8&amp;amp;dt=%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&amp;amp;sd=24-bit&amp;amp;sr=2000x1125&amp;amp;vp=1851x1036&amp;amp;je=0&amp;amp;_u=AACAAEABI~&amp;amp;jid=577970443&amp;amp;cid=1018227072.1435921485&amp;amp;tid=UA-38726905-1&amp;amp;_r=1&amp;amp;z=1229189645&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://player.vimeo.com/video/81598867?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://connect.facebook.net/en_US/all.js#xfbml=1&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/watch.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://api.twitter.com/1/statuses/user_timeline/performancelab.json?callback=jQuery18108161420381620927_1456558215966&amp;amp;_=1456558218317&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://cdn.syndication.twimg.com/widgets/timelines/426602060864176128?&amp;amp;lang=en&amp;amp;callback=twitterFetcher.callback&amp;amp;suppress_response_codes=true&amp;amp;rnd=0.508168626184325&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/metrika/advert.gif&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://mc.yandex.ru/watch/20434597?wmode=5&amp;amp;callback=_ymjsp531663347&amp;amp;page-url=http%3A%2F%2Fwww.performance-lab.ru%2F&amp;amp;browser-info=s%3A2000x1125x24%3Ask%3A0.800000011920929%3Afpr%3A216613626101%3Acn%3A1%3Aw%3A1851x1036%3Az%3A240%3Ai%3A20160227113019%3Aet%3A1456558219%3Aen%3Autf-8%3Av%3A677%3Ac%3A1%3Ala%3Aru-ru%3Als%3A380849311468%3Arqn%3A34%3Arn%3A154625388%3Ahid%3A353107325%3Ads%3A447%2C0%2C553%2C1%2C460%2C0%2C%2C3391%2C147%2C%2C%2C%2C5106%3Awn%3A48846%3Ahl%3A1%3Arqnl%3A1%3Ast%3A1456558219%3Au%3A1450519632160603024%3At%3A%D0%9F%D0%B5%D1%80%D1%84%D0%BE%D0%BC%D0%B0%D0%BD%D1%81%20%D0%9B%D0%B0%D0%B1%20%E2%80%94%20%D0%A2%D0%B5%D1%81%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%20QA&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/js/player.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/p/2.16.1/css/player.css&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://ssl.google-analytics.com/ga.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://f.vimeocdn.com/js_opt/modules/utils/vuid.min.js&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;https://www.facebook.com/impression.php/fab8748cc19812/?lid=115&amp;amp;payload=%7B%22source%22%3A%22jssdk%22%7D&quot;&gt;&lt;/iframe&gt;
+    &lt;iframe src=&quot;http://staticxx.facebook.com/connect/xd_arbiter.php?version=42#channel=f97af04c209bee&amp;amp;origin=http%3A%2F%2Fwww.performance-lab.ru&quot;&gt;&lt;/iframe&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</stringProp>
+        </ru.pflb.jmeter.samplers.TailHTTPSamplerProxy>
+        <hashTree>
+          <CacheManager guiclass="CacheManagerGui" testclass="CacheManager" testname="HTTP Cache Manager (7)" enabled="true">
+            <boolProp name="clearEachIteration">false</boolProp>
+            <boolProp name="useExpires">true</boolProp>
+            <intProp name="maxSize">8000</intProp>
+          </CacheManager>
+          <hashTree/>
+        </hashTree>
+        <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="false">
+          <boolProp name="displayJMeterProperties">false</boolProp>
+          <boolProp name="displayJMeterVariables">true</boolProp>
+          <boolProp name="displaySystemProperties">false</boolProp>
+        </DebugSampler>
+        <hashTree/>
+        <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="TableVisualizer" testclass="ResultCollector" testname="View Results in Table" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="GraphVisualizer" testclass="ResultCollector" testname="Graph Results" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="RespTimeGraphVisualizer" testclass="ResultCollector" testname="Response Time Graph" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>true</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>true</responseData>
+              <samplerData>false</samplerData>
+              <xml>true</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>true</responseHeaders>
+              <requestHeaders>true</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <url>true</url>
+              <fileName>true</fileName>
+              <hostname>true</hostname>
+              <threadCounts>true</threadCounts>
+              <sampleCount>true</sampleCount>
+              <idleTime>true</idleTime>
+              <connectTime>true</connectTime>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+          <stringProp name="RespTimeGraph.interval">1000</stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="StatGraphVisualizer" testclass="ResultCollector" testname="Aggregate Graph" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="SummaryReport" testclass="ResultCollector" testname="Summary Report" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+        <ResultCollector guiclass="DistributionGraphVisualizer" testclass="ResultCollector" testname="Distribution Graph (alpha)" enabled="true">
+          <boolProp name="ResultCollector.error_logging">false</boolProp>
+          <objProp>
+            <name>saveConfig</name>
+            <value class="SampleSaveConfiguration">
+              <time>true</time>
+              <latency>true</latency>
+              <timestamp>true</timestamp>
+              <success>true</success>
+              <label>true</label>
+              <code>true</code>
+              <message>true</message>
+              <threadName>true</threadName>
+              <dataType>true</dataType>
+              <encoding>false</encoding>
+              <assertions>true</assertions>
+              <subresults>true</subresults>
+              <responseData>false</responseData>
+              <samplerData>false</samplerData>
+              <xml>false</xml>
+              <fieldNames>false</fieldNames>
+              <responseHeaders>false</responseHeaders>
+              <requestHeaders>false</requestHeaders>
+              <responseDataOnError>false</responseDataOnError>
+              <saveAssertionResultsFailureMessage>false</saveAssertionResultsFailureMessage>
+              <assertionsResultsToSave>0</assertionsResultsToSave>
+              <bytes>true</bytes>
+              <threadCounts>true</threadCounts>
+            </value>
+          </objProp>
+          <stringProp name="filename"></stringProp>
+        </ResultCollector>
+        <hashTree/>
+      </hashTree>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>
