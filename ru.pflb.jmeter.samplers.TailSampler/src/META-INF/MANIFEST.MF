@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Name: ru.pflb/jmeter.samplers.TailHttpSamplerGui
+Created-By: InelliJ IDEA 15.0.3 Community Edition (Jet Brains), 1.6.0_45-b06 (Sun Microsystems Inc.)
+Specification-Title: HTTP Sampler GUI
+Specification-Version: 2.13
+Specification-Vendor: Apache Software Foundation
+Implementation-Title: ru.pflb.jmeter.samplers.TailHttpSamplerGui (pflb - HTTP Request Tail)
+Implementation-Version: 0.2.5
+Implementation-Vendor: Performance Lab
+Implementation-Vendor-Id: ru.pflb
+Implementation-URL: https://git.performance-lab.ru/v.smirnov/Jmeter.Plugin.TailSampler/
