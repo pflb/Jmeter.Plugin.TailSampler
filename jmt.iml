@@ -8,20 +8,5 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="ru.pflb.jmeter.samplers.TailSampler" />
-    <orderEntry type="library" name="org.apache.jmeter:ApacheJMeter_components:3.0" level="project" />
-    <orderEntry type="library" name="org.apache.jmeter:ApacheJMeter_core:3.0" level="project" />
-    <orderEntry type="library" name="org.apache.jmeter:jorphan:3.0" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_functions" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_monitors" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_ftp" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_java" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_jdbc" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_jms" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_ldap" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_mail" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_mongodb" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_tcp" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_native" level="project" />
-    <orderEntry type="library" name="ApacheJMeter_http" level="project" />
   </component>
 </module>
