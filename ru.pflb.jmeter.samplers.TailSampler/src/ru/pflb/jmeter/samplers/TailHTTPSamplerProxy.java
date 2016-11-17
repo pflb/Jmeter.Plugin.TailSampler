@@ -11,7 +11,6 @@ import ru.pflb.jmeter.samplers.wrapper.WrapperHTTPSamplerFactory;
 public class TailHTTPSamplerProxy extends HTTPSamplerBase implements Interruptible {
 
     public static final String EMBRESLINKS = "Tail.Links";
-    public static final String EMBRESCONTENT = "Tail.Content";
     private static final long serialVersionUID = 1L;
     private transient ITailHTTPImpl impl;
     private transient volatile boolean notifyFirstSampleAfterLoopRestart;
@@ -75,7 +74,8 @@ public class TailHTTPSamplerProxy extends HTTPSamplerBase implements Interruptib
         }
         HTTPSampleResult result;
         if (depth == 0) {
-            byte[] content = this.getPropertyAsString(TailHTTPSamplerProxy.EMBRESCONTENT).getBytes();
+            String links = this.getPropertyAsString(TailHTTPSamplerProxy.EMBRESLINKS);
+            byte[] content = this.getEmbeddedResourceContent(links).getBytes();
             if (impl instanceof TailHTTPHC4Impl){
                 TailHTTPHC4Impl tailIml = (TailHTTPHC4Impl)impl;
                 result = tailIml.sampleTail(u, method, areFollowingRedirect, depth, content);

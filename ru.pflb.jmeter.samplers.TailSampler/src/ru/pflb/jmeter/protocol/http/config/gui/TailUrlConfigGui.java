@@ -42,13 +42,6 @@ public class TailUrlConfigGui extends MultipartUrlConfigGui {
     public void modifyTestElement(TestElement sampler) {
         super.modifyTestElement(sampler);
         sampler.setProperty(TailHTTPSamplerProxy.EMBRESLINKS, requestData.getText());
-        if(sampler instanceof TailHTTPSamplerProxy) {
-            TailHTTPSamplerProxy tailSampler = (TailHTTPSamplerProxy)sampler;
-            String links = tailSampler.getEmbeddedResourceContent(requestData.getText());
-            sampler.setProperty(TailHTTPSamplerProxy.EMBRESCONTENT, links);
-        }else {
-            throw new RuntimeException("Unsupported sampler: " + sampler.toString());
-        }
     }
 
     @Override
