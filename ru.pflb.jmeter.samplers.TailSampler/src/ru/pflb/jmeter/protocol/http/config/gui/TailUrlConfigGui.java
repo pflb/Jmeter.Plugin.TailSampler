@@ -2,10 +2,13 @@ package ru.pflb.jmeter.protocol.http.config.gui;
 
 import org.apache.jmeter.gui.util.JSyntaxTextArea;
 import org.apache.jmeter.gui.util.JTextScrollPane;
-import org.apache.jmeter.protocol.http.config.gui.MultipartUrlConfigGui;
 import org.apache.jmeter.testelement.TestElement;
 import org.apache.jmeter.util.JMeterUtils;
 import ru.pflb.jmeter.samplers.TailHTTPSamplerProxy;
+import org.apache.jmeter.protocol.http.config.gui.UrlConfigGui;
+
+//deprecated
+//import org.apache.jmeter.protocol.http.config.gui.MultipartUrlConfigGui;
 
 import javax.swing.*;
 import java.awt.*;
@@ -20,7 +23,7 @@ import java.awt.*;
  * <li>embedded resource links</li>
  * </ul>
  */
-public class TailUrlConfigGui extends MultipartUrlConfigGui {
+public class TailUrlConfigGui extends UrlConfigGui {
 
     /**
      * Embedded resource links
@@ -33,8 +36,8 @@ public class TailUrlConfigGui extends MultipartUrlConfigGui {
         init();
     }
 
-    public TailUrlConfigGui(boolean showSamplerFields, boolean showImplementation) {
-        super(showSamplerFields, showImplementation);
+    public TailUrlConfigGui(boolean showSamplerFields,   boolean showRawBodyPane, boolean showFileUploadPane) {
+        super(showSamplerFields, showRawBodyPane, showFileUploadPane);
         init();
     }
 
@@ -84,14 +87,14 @@ public class TailUrlConfigGui extends MultipartUrlConfigGui {
     private JPanel createDataPanel() {
         JLabel label = new JLabel("Embedded resources"); //$NON-NLS-1$
 
-        requestData = new JSyntaxTextArea(15, 80);
+        requestData = JSyntaxTextArea.getInstance(15, 80);
         requestData.setLanguage("text");
         requestData.setName(TailHTTPSamplerProxy.EMBRESLINKS);
         label.setLabelFor(requestData);
 
         JPanel dataPanel = new JPanel(new BorderLayout(5, 0));
         dataPanel.add(label, BorderLayout.WEST);
-        dataPanel.add(new JTextScrollPane(requestData), BorderLayout.CENTER);
+        dataPanel.add(JTextScrollPane.getInstance(requestData), BorderLayout.CENTER);
 
         return dataPanel;
     }

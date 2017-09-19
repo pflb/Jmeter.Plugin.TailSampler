@@ -26,7 +26,7 @@ public final class WrapperHTTPSamplerFactory{
     //+ JMX implementation attribute values (also displayed in GUI) - do not change
     public static final String IMPL_HTTP_CLIENT4 = "HttpClient4";  // $NON-NLS-1$
 
-    public static final String IMPL_HTTP_CLIENT3_1 = "HttpClient3.1"; // $NON-NLS-1$
+    //public static final String IMPL_HTTP_CLIENT3_1 = "HttpClient3.1"; // $NON-NLS-1$
 
     public static final String IMPL_JAVA = "Java"; // $NON-NLS-1$
     //- JMX
@@ -39,7 +39,7 @@ public final class WrapperHTTPSamplerFactory{
     }
 
     public static String[] getImplementations(){
-        return new String[]{IMPL_HTTP_CLIENT4,IMPL_HTTP_CLIENT3_1,IMPL_JAVA};
+        return new String[]{IMPL_HTTP_CLIENT4,IMPL_JAVA};
     }
 
     public static ITailHTTPImpl getImplementation(String impl, HTTPSamplerBase base, int depth){
@@ -52,8 +52,6 @@ public final class WrapperHTTPSamplerFactory{
 
         if (IMPL_JAVA.equals(impl) || HTTP_SAMPLER_JAVA.equals(impl)) {
             return new WrapperHTTPJavaImpl(base);
-        } else if (IMPL_HTTP_CLIENT3_1.equals(impl) || HTTP_SAMPLER_APACHE.equals(impl)) {
-            return new WrapperHTTPHC3Impl(base);
         } else if (IMPL_HTTP_CLIENT4.equals(impl)) {
             return new WrapperHTTPHC4Impl(base);
         } else {

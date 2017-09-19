@@ -4,14 +4,21 @@ package ru.pflb.jmeter.samplers.wrapper;
  * Created by a.perevozchikova on 29.02.2016.
  */
 
-import org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl;
+
+
 import org.apache.jmeter.protocol.http.sampler.HTTPSampleResult;
 import org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase;
 import ru.pflb.jmeter.samplers.ITailHTTPImpl;
+import org.apache.jmeter.protocol.http.sampler.HTTPSampler;
+import org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl;
 
 import java.net.URL;
 
-public class WrapperHTTPHC3Impl extends HTTPHC3Impl implements ITailHTTPImpl{
+/** deprecated
+ *import org.apache.jmeter.protocol.http.sampler.HTTPHC3Impl;
+ */
+
+public class WrapperHTTPHC3Impl extends HTTPHC4Impl implements ITailHTTPImpl{
 
 
     protected WrapperHTTPHC3Impl(HTTPSamplerBase base) {

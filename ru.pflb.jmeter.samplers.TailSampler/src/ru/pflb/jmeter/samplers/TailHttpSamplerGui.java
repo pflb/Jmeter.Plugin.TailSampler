@@ -87,7 +87,7 @@ public class TailHttpSamplerGui extends HttpTestSampleGui {
         add(super.makeTitlePanel(), BorderLayout.NORTH);
 
         // URL CONFIG
-        tailUrlConfigGui = new TailUrlConfigGui(true, !isAJP);
+        tailUrlConfigGui = new TailUrlConfigGui(true, !isAJP, false);
         add(tailUrlConfigGui, BorderLayout.CENTER);
 
         // Bottom (embedded resources, source address and optional tasks)

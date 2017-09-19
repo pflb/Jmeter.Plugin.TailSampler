@@ -2,9 +2,6 @@ package ru.pflb.jmeter.samplers;
 
 import org.apache.http.HttpHost;
 import org.apache.http.client.methods.*;
-import org.apache.http.protocol.BasicHttpContext;
-import org.apache.http.protocol.ExecutionContext;
-import org.apache.http.protocol.HttpContext;
 import org.apache.jmeter.protocol.http.sampler.HTTPHC4Impl;
 import org.apache.jmeter.protocol.http.sampler.HTTPSampleResult;
 import org.apache.jmeter.protocol.http.sampler.HTTPSamplerBase;
@@ -13,10 +10,21 @@ import org.apache.jmeter.protocol.http.util.HTTPConstants;
 import org.apache.jmeter.samplers.SampleResult;
 import org.apache.jorphan.logging.LoggingManager;
 import org.apache.log.Logger;
+import org.apache.http.protocol.BasicHttpContext;
+import org.apache.http.protocol.HttpContext;
+import org.apache.http.protocol.HttpCoreContext;
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URL;
+
+//deprecated
+/**
+
+ import org.apache.http.protocol.ExecutionContext;
+
+ */
+
 
 /**
  * Fork of HTTP Sampler using Apache HttpClient 4.x.
@@ -103,8 +111,8 @@ public class TailHTTPHC4Impl extends HTTPHC4Impl implements ITailHTTPImpl{
 
             // If we redirected automatically, the URL may have changed
             if (getAutoRedirects()) {
-                HttpUriRequest req = (HttpUriRequest) localContext.getAttribute(ExecutionContext.HTTP_REQUEST);
-                HttpHost target = (HttpHost) localContext.getAttribute(ExecutionContext.HTTP_TARGET_HOST);
+                HttpUriRequest req = (HttpUriRequest) localContext.getAttribute(HttpCoreContext.HTTP_REQUEST);
+                HttpHost target = (HttpHost) localContext.getAttribute(HttpCoreContext.HTTP_TARGET_HOST);
                 URI redirectURI = req.getURI();
                 if (redirectURI.isAbsolute()) {
                     res.setURL(redirectURI.toURL());
