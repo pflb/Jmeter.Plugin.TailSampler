@@ -1,61 +1,75 @@
 # Jmeter.Plugin.TailSampler
-Sampler, выполняющий параллельную загрузку указанных ресурсов (embedded resources).
 
-Плагин упрощает загрузку встроенных ресурсов, делая тест максимально близким к работе браузера.
-HTTP Request Tail преобразует список ссылок в HTML-документ, загрузка встроенных ресурсов которого создаст GET-запрос по каждой из указанных ссылок.
+_Sampler_, performing parallel loading of specified resources.
 
-[Ссылка](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler.jar?raw=true) на скачивание.
+Plugin makes it easy to load embedded resources, 
+making the test as close as possible to the browser operation.
+**HTTP Request Tail** converts the list of links into an HTML document, 
+GET request for each of these links, downloads embedded resources
 
-Данная версия плагина обеспечивает работу с JMeter 3.0, JMeter 2.13. На более ранних версиях работа плагина не проверялась.
+[Link][1] to download.
 
-### Инструкция по установке
+[1]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler.jar?raw=true)
 
-1. Скачать плагин (см. ссылки выше) ru.pflb.jmeter.samplers.TailSampler.jar.
-2. Скопировать плагин в каталог lib/ext для JMeter 3.0.
-3. Перезапустить JMeter 3.0.
+This version of the plugin designed to work with JMeter 3.0, JMeter 2.13. 
+Not tested on earlier versions.
 
-Пример каталога:
+### Installation
 
-	D:\TOOLS\apache-jmeter-3.0\lib\ext\
-	D:\TOOLS\apache-jmeter-3.0\lib\ext\ru.pflb.jmeter.samplers.TailSampler.jar
+1. Download the plugin (see links above) ru.pflb.jmeter.samplers.TailSampler.jar.
+2. Copy the plugin to `lib/ext` directory JMeter 3.0.
+3. Restart JMeter 3.0.
 
-### Описание
+Example directory:
+```
+D:\TOOLS\apache-jmeter-3.0\lib\ext\
+D:\TOOLS\apache-jmeter-3.0\lib\ext\ru.pflb.jmeter.samplers.TailSampler.jar
+```
+### Description
+Default settings:
 
-По умолчанию используются настройки:
+- [v] **Retrieve All Embedded Resources** - *the checkbox is set by default, it can be removed,
+but then subrequests will not be executed, and the HTTP Request Tail will become useless*.
+- [v] **Use concurrent pool** -  *the checkbox is set by default, 
+  on a large number of embedded resources, multi-threaded download increases the download speed*.
+- **Use concurrent pool Size**: `4` - *the default value is 4, the value is used as the JMeter base value*.
+   - HttpClient4 *when configuring* **Use concurrent pool Size**: 4 will send up to 4 requests parallel,
+     each thread will use 1 persistent connection per domain:
+     - Run a thread group, the size of the group determined by the **Use concurrent pool Size** settings;
+       `- When configuring [v] **Use keepalive** each thread for each unique domain will create one persistent connection;`
+   - By default, Firefox 44.0 browser sends up to *6* requests at the same time for each domain (see ``about:config``):
+       - `256` - *network.http.max-connections* - The maximum number of connections;
+       - `6` - *network.http.max-persistent-connections-per-server* - The maximum number of persistent connections 
+         to the server;
+       - `32` - *network.http.max-persistent-connections-per-proxy* - The maximum number of persistent connections 
+         to the proxy server;
+   - If you focus on Firefox settings and the fact that LT resources usually belong to the same domain, then in {v} you
+     can set value to ``6`` instead of the standard value ``4``.
+     
 
-- [v] **Retrieve All Embedded Resources** - *по умолчанию галочка поставлена, её можно снять, но тогда не будут выполнять подзапросы и HTTP Request Tail станет бесполезным*;
-- [v] **Use concurent pool** - *по умолчанию галочка поставлена, на большом количестве встроенных ресурсов многопоточная загрузка увеличивает скорость закачки*;
-- **Use concerent pool Size**: `4` - *по умолчанию используется значение 4, это значение используется JMeter в качестве базового*:
-	- HttpClient4 при настройке **Use concerent pool Size**: `4` будет посылать до *4* запросов одновременно, каждый поток будет использовать по *1* постоянному соединению на каждый домен:
-		- запустится группа потоков, размер группы определяется настройкой  **Use concerent pool Size**;
-		- при настройке [v] **Use keepalive** каждый поток для каждого уникального домена будет создавать одно постоянное соединение (persistent-connection);
-	- Браузер Mozilla Firefox 44.0 по умолчанию посылает до *6* одновременных запросов на каждый домен (см. ``about:config``):
-		- `256` - *network.http.max-connections* - максимальное число соединений;
-		- `6` - *network.http.max-persistent-connections-per-server* - максимальное число постоянных соединений с сервером (keepalive);
-		- `32` - *network.http.max-persistent-connections-per-proxy* - максимальное число постоянных соединений с прокси-сервером (keepalive);
-	- Если ориентироваться на настройки Firefox, и то, что ссылки на встроенные ресурсы в проектах нагрузочного тестирования обычно принадлежат одному домену, то в **Use concerent pool Size** можно ставить значение ``6``, вместо стандартного значения ``4``.
-
-Неиспользуемые настройки - настройки для POST-запросов, значения никак не используются ни главным запросом ни подзапросами:
-
+Unused settings - settings for the POST-request, the values are not used in any way by either main request or subrequests:
 - [ ] **Use multipart/form-data for POST**;
 - [ ] **Browser-compatible headers**.
 
-Главный запрос генерируется, а не отправляется, на него настройки для POST-запросов не действуют. Подзапросы используют метод GET, для них также не действуют настройки для POST-запросов.
+The main request is generated, not sent, the configuration for the POST request does not apply to it.
+Subrequests use the method GET, the POST request setting is also not valid for them.
 
-Остальные настройки действуют на подзапросы.
+The rest of the settings are valid for subrequests.
 
-Адреса для встроенных ресурсов указываются в текством поле **Embedded resources**. Можно указывать относительные и абсолютные адреса. Относительные адреса дополняются значениями полей:
+Addresses for embedded resources are specified in the text box **Embedded resources**. You con specify relative and 
+absolute addresses. Relative addresses are supplemented by field values:
 
-- **Web Server** - *хост и порт*:
+- **Web Server** - *Host and port*:
 	- **Server Name or IP**;
 	- **Port Number**;
-- **Path** - *каталог для тех ссылок, что являются относительными относительно страницы, а не относительно хоста*.
+- **Path** - *Catalogue for those links that are relative to the page, not to the host*.
 
-Ответ на основной запрос генерируется. Запроса нет, есть только тело ответа.
-Тело ответа представляет собой html-документ, текст с кодировкой UTF-8, где для каждой ссылки на встроенный ресурс сгенерирован тег **iframe**.
+The response to the main request is generated. There is no request, there is only the body of the response.
+The response body is an HTML document, text with UTF-8 encoding, where the tag **iframe** is generated for each reference
+to the embedded resource.
 
-Пример документа:
-
+Example of a document:
+```
 	<!DOCTYPE HTML>
 	<html>
 	<head>
@@ -70,35 +84,60 @@ HTTP Request Tail преобразует список ссылок в HTML-до�
 		<iframe src="http://staticxx.facebook.com/connect/xd_arbiter.php"></iframe>
 	  </body>
 	</html>
+```
 
-#### Временные характеристики
-Если снять галочку [ ] **Retrieve All Embedded Resources** или не указать ни одной ссылки в **Embedded resources**, то в логах будет написано, что запрос оптправился мгновенно, и ответ на него пришел мгновенно.
+#### Temporary configurations
+If you uncheck the **Retrieve All Embedded Resources** checkbox or do not specify a single link in **Embedded resources**,
+the log will say that the request sent instantly, and the response to it came instantly
 
-Описание временных характеристик:
+Description of temporary configuration:
 
-- *Load Time* отражает длительность загрузки встроенных ресурсов;
-- *Connect time* всегда `0`;
-- *Latency* всегда `0`.
+- *Load Time* reflects the duration of loading embedded resources;
+- *Connect time* always `0`;
+- *Latency* always `0`.
 
-### Структура проекта
+### Project structure
 
-Исходный код в каталоге:
+Source code in the catalogue:
 
-[/src/ru/pflb/jmeter](https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter):
+[/src/ru/pflb/jmeter][2]:
 
-- [protocol/http/config/gui](https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/protocol/http/config/gui):
-	- **[TailUrlConfigGui.java](https://git.performance-lab.ru/v.smirnov/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/protocol/http/config/gui/TailUrlConfigGui.java)** - элемент управления с большим полем ввода для ссылок на встроенные ресурсы;
+- [protocol/http/config/gui][3]:
+    - **[TailUrlConfigGui.java][4]** - Control with a large input field for links to embedded resources;
 - samplers:
-	- [wrapper](https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper) - обёртки, чтобы использовать указанный на форме Implementation:
-		- **[WrapperHTTPFileImpl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPFileImpl.java)** - обёртка, чтобы использовать обработчик протокола `file://` для подзапросов;
-		- **[WrapperHTTPHC3Impl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPHC3Impl.java)** - обёртка, чтобы использовать `HttpClient3.1` из настройки **Implementation** для подзапросов;
-		- **[WrapperHTTPHC4Impl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPHC4Impl.java)** - обёртка, чтобы использовать `HttpClient4` из настройки **Implementation** для подзапросов;
-		- **[WrapperHTTPJavaImpl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPJavaImpl.java)** - обёртка, чтобы использовать `Java` из настройки **Implementation** для подзапросов;
-		- **[WrapperHTTPSamplerFactory.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPSamplerFactory.java)** - фабрика, для создания обёрток, возвращает обработчик по значениям протокола и настройке **Implementation**;
-	- **[EscapeUtils.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/EscapeUtils.java)** - реализация html-экранирования, позволяет работать с русскими доменами, юникодом и специальными символами в ссылках;
-	- **[ITailHTTPImpl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/ITailHTTPImpl.java)** - базовый интерфейс для всех обработчиков;
-	- **[TailHTTPHC4Impl.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHTTPHC4Impl.java)** - модифицированный **HttpClient4**, который может не отправлять запрос, и сразу использовать указанное тело ответа;
-	- **[TailHTTPSamplerProxy.java]https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHTTPSamplerProxy.java)** - прокси-класс в котором реализована вся логика работы **TailSampler**, берёт список ссылок из настроек и передаёт в **TailHTTPHC4Impl** для первого запроса, и в стандартные обработчики для запросов на встроенные ресурсы;
-	- **[TailHttpSamplerGui.java](https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHttpSamplerGui.java)** - визуальное представление **TailSampler**.
+	- [wrapper][5] - Wrappers:
+		- **[WrapperHTTPFileImpl.java][6]** - To use protocol handler `file://` for subrequests;
+		- **[WrapperHTTPHC3Impl.java][7]** - To use `HttpClient3.1` from settings **Implementation** for subrequests;
+		- **[WrapperHTTPHC4Impl.java][8]** - To use `HttpClient4` from settings **Implementation** for subrequests;
+		- **[WrapperHTTPJavaImpl.java][9]** - To use `Java` from settings **Implementation** for subrequests;
+		- **[WrapperHTTPSamplerFactory.java][10]** - Factory, to create wrappers, returns the handler by protocol
+          values and settings **Implementation**;
+	- **[EscapeUtils.java][11]** - HTML shielding implementation, allows you to work with Russian domains, unicode and
+      special characters in links;
+	- **[ITailHTTPImpl.java][12]** - Basic interface for all handlers;
+	- **[TailHTTPHC4Impl.java][13]** - Modified **HttpClient4**, which may not send a request and immediately use the 
+      specified response body;
+	- **[TailHTTPSamplerProxy.java][14]** - The proxy class, which implements all the logic of **TailSampler**, takes 
+      a list of links from the settings and sends them to **TailHTTPHC4Impl** for the first request and to standard 
+      handlers for requests for embedded resources;
+	- **[TailHttpSamplerGui.java][15]** - Visual representation **TailSampler**.
 
-Другие каталоги вспомогательные, служат для удобства отладки проекта.
+[2]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter)
+[3]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/protocol/http/config/gui)
+[4]: (https://git.performance-lab.ru/v.smirnov/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/protocol/http/config/gui/TailUrlConfigGui.java)
+[5]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/tree/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper)
+[6]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPFileImpl.java)
+[7]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPHC3Impl.java)
+[8]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPHC4Impl.java)
+[9]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPJavaImpl.java)
+[10]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/wrapper/WrapperHTTPSamplerFactory.java)
+[11]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/EscapeUtils.java)
+[12]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/ITailHTTPImpl.java)
+[13]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHTTPHC4Impl.java)
+[14]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHTTPSamplerProxy.java)
+[15]: (https://github.com/pflb/Jmeter.Plugin.TailSampler/blob/master/ru.pflb.jmeter.samplers.TailSampler/src/ru/pflb/jmeter/samplers/TailHttpSamplerGui.java)
+
+Other auxiliary catalogues serve to debug the project.
+
+
+
